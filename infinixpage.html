@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INFINIX</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+       /* navbar */
+       #samsunglogo{
+        margin-left: 30%;
+    }
+    .navbar-nav{
+        margin-top: 0.2%;
+        margin-left: 2.5%;
+        font-size: 0.8vw;
+        font-weight: bold;
+    }
+    @media screen and (max-width: 480px) {
+        .navbar-nav{
+            font-size: 10px;
+          } 
+        .carousel{
+         height: 180px;
+        }
+        .d-block{
+            height: 180px;
+        }
+        }
+ #header{
+    background-image:linear-gradient(to right,rgb(228, 225, 225),rgb(59, 58, 58));
+  }        
+
+    .nav-item:hover{
+        background-color: black; 
+        border-radius: 30px;
+    }
+    .nav-item{
+        border-radius: 30px !important;
+     
+    }
+    #home:hover{
+        color: white;
+    
+    }
+    #login{
+    
+        font-weight: bold;
+        border: none;
+        font-size: 13px;
+        border-radius: 30px;
+        text-decoration: none;
+    }
+    #signin{
+        font-weight: bold;
+        border: none;
+        font-size: 13px;
+        border-radius: 30px;
+        text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    form{
+        margin-left: 63%;
+    }
+    .carousel{
+        width: 80%;
+        margin-left: 10%;
+        height: auto;
+    }
+    .card1{
+        width: 70%;
+        height: 53vh;
+        background-color: whitesmoke;
+        margin-top: 10%;
+        border-radius: 5%;
+    }
+    .card2{
+        width: 70%;
+        height: 53vh;
+        background-color: whitesmoke;
+        margin-top: 10%;
+        border-radius: 5%;
+    }
+    .card3{
+        width: 70%;
+        height: 53vh;
+        background-color: whitesmoke;
+        margin-top: 10%;
+        border-radius: 5%;
+    }
+    .card4{
+        width: 70%;
+        height: 53vh;
+        background-color: whitesmoke;
+        margin-top: 10%;
+        border-radius: 5%;
+    }
+    .card5{
+        width: 70%;
+        height: 53vh;
+        background-color: whitesmoke;
+        margin-top: 10%;
+        border-radius: 5%;
+    }
+    .card6{
+        width: 70%;
+        height: 53vh;
+        background-color: whitesmoke;
+        margin-top: 10%;
+        border-radius: 5%;
+    }
+    #heading{
+        text-align: center;
+        margin-top: 2%;
+        font-weight: bold;
+    }
+    #img{
+        margin-top: 15%;
+        /* width:100% ; */
+        /* height: 60%; */
+        border-radius: 10%;
+    }
+    #buy{
+        font-weight: bold;
+        border: none;
+        font-size: 17px;
+        border: 1px solid black;
+        margin-left: 15px;
+        border-radius: 30px;
+        margin-top:1%;
+        background-color: black !important;
+        color: white !important;
+        display: none;
+    }
+    #buy2{
+        font-weight: bold;
+        border: none;
+        font-size: 17px;
+        border: 1px solid black;
+        margin-left: 15px;
+        border-radius: 30px;
+        margin-top:1%;
+        background-color: black !important;
+        color: white !important;
+        display: none;    
+    }
+    #buy3{
+        font-weight: bold;
+        border: none;
+        font-size: 17px;
+        margin-left: 15px;
+        border-radius: 30px;
+        margin-top:1%;
+        background-color: black !important;
+        color: white !important;
+        display: none;
+    }        
+    #buy4{
+        font-weight: bold;
+        border: none;
+        font-size: 17px;
+        margin-left: 15px;
+        border-radius: 30px;
+        margin-top:1%;
+        background-color: black !important;
+        color: white !important;
+        display: none;
+    }        
+    #buy5{
+        font-weight: bold;
+        border: none;
+        font-size: 17px;
+        margin-left: 15px;
+        border-radius: 30px;
+        margin-top:1%;
+        background-color: black !important;
+        color: white !important;
+        display: none;
+    }        
+    #buy6{
+        font-weight: bold;
+        border: none;
+        font-size: 17px;
+        margin-left: 15px;
+        border-radius: 30px;
+        margin-top:1%;
+        background-color: black !important;
+        color: white !important;
+        display: none;
+    }
+    #footer{
+    background-color: whitesmoke;
+    /* height: 48vh; */
+    height: auto;
+    margin-top: 5%;
+}
+.tabletwo{
+    margin-top: 30%;
+}
+
+td{
+    display:list-item;
+    list-style-type: none;
+    color: gray;
+    font-size: 15px; 
+}
+#mybtn{
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    margin-top: 20%;
+}
+#mybtn:hover{
+    border-radius: 100%;
+    color: white;
+    background:linear-gradient(-45deg, #8f8b8b, #232323);
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    transition:  0.5s;
+    font-size: 30px;
+}        
+  </style>
+</head>
+<body>
+   <!-- navbar -->
+   <nav  class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img id="samsunglogo" src="infiniximage/infinixLOGO.png" alt="" width="130" height="40px" >
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="home" class="nav-link active" aria-current="page" href="home.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a id="home" class="nav-link active" aria-current="page" href="./aboutus.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a id="home" class="nav-link active" aria-current="page" href="conatctuspage.html">CONTACT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a id="home" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              MENU
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="./applepage.html">APPLE</a></li>
+              <li><a class="dropdown-item" href="./samsungpage.html">SAMSUNG</a></li>
+              <li><a class="dropdown-item" href="./oppopage.html">OPPO</a></li>
+              <li><a class="dropdown-item" href="./infinixpage.html">INFINIX</a></li>
+              <li><a class="dropdown-item" href="./xiaomipage.html">XIAOMI</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button id="signin" class="btn btn-outline-dark" type="submit"><a id="signin" class="btn btn-outline-dark"
+              href="signup.html">Sign Up</a></button>
+          <button id="login" class="btn btn-outline-dark" type="submit"><a id="login" class="btn btn-outline-dark"
+              href="login.html">Log In</a></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  </nav>
+
+<!-- slider -->
+
+<!-- slider  -->
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img id="slider" src="infiniximage/infinixslider1.jpg" class="d-block w-100" alt="..." height="410px">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img id="slider" src="infiniximage/infinixslider2.png" class="d-block w-100" alt="..." height="410px">
+      </div>
+      <div class="carousel-item">
+        <img id="slider" src="infiniximage/infinixslider3.jpg" class="d-block w-100" alt="..." height="410px">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- cards -->
+
+  <div class="container">
+    <h1 id="heading">MONTH'S</h1>
+
+
+    <div class="row ">
+      <div class="col-lg-4 md-4 sm-12">
+  
+        <center>
+          <div data-aos="fade-right">
+          <div class="card1">
+            <center>
+            <img id="img" src="infiniximage/infinixNote12(G96).png" alt="" width="250px">
+            <br>
+            <h5>Infinix Note 12(G96)</h5>
+            <p id="p">44,999 PKR</p>
+            <a href="./infinixNote129(G96)feature.html"><button id="buy" class="btn btn-outline-dark" type="submit">Learn More</button></a>
+        </center>
+          </div>
+        </div>
+        </center>
+      </div>
+   
+
+      <div class="col-lg-4 md-4 sm-12">
+        <center>
+          <div data-aos="fade-top">
+          <div class="card2">
+            <img id="img" src="infiniximage/infinixnote12vip.png" alt="" width="250px">
+            <br>
+            <h5>Infinix Note 12 vip</h5>
+            <p id="p2">64,999 PKR</p>
+            <a href="./infinixNote12Vipfeature.html"><button id="buy2" class="btn btn-outline-dark" type="submit">Learn More</button></a>
+          </div>
+        </div>
+        </center>
+      </div>
+
+      <div class="col-lg-4 md-4 sm-12">
+        <center>
+          <div data-aos="fade-left">
+          <div class="card3">
+            <img id="img" src="infiniximage/infinixnote8.png" alt="" width="250px">
+            <br>
+            <h5>Infinix Note 8</h5>
+            <p id="p3">64,999 PKR</p>
+            <a href="./infinixNote8.html"><button id="buy3" class="btn btn-outline-dark" type="submit">Learn More</button></a>
+          </div>
+        </div>
+        </center>
+      </div>  
+      <div class="col-lg-4 md-4 sm-12">
+        <center>
+          <div data-aos="fade-right">
+          <div class="card4">
+            <img id="img" src="infiniximage/infinixZERO20.png" alt="" width="250px">
+            <br>
+            <h5>Infinix ZERO 20</h5>
+            <p id="p4">59,999 PKR</p>
+            <a href="./infinixZero20.html"><button id="buy4" class="btn btn-outline-dark" type="submit">Learn More</button></a>
+          </div>
+        </div>
+        </center>
+      </div>
+      <div class="col-lg-4 md-4 sm-12">
+        <center>
+          <div data-aos="fade-bottom">
+          <div class="card5">
+            <img id="img" src="infiniximage/infinixzero8.png" alt="" width="250px">
+            <br>
+            <h5>Infinix zero 8</h5>
+            <p id="p5">34,099 PKR</p>
+            <a href="./infinixZero8.html"><button id="buy5" class="btn btn-outline-dark" type="submit">Learn More</button></a>
+          </div>    
+        </div>
+        </center>
+      </div>
+      <div class="col-lg-4 md-4 sm-12">
+        <center>
+          <div data-aos="fade-left">
+          <div class="card6">
+            <img id="img" src="infiniximage/infinixhot8lite.png" alt="" width="210px" height="250px">
+            <h5>Infinix Hot 8 Lite</h5>
+            <p id="p6">12,700 PKR</p>
+            <a href="./infinixhot8Lite.html"><button id="buy6" class="btn btn-outline-dark" type="submit">Learn More</button></a>
+          </div>
+        </div>
+        </center>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div id="one" class="col-4 col-lg-2">
+          <center>
+            <table class="tabletwo">
+              <tr>
+                <th>Shop</th>
+              </tr>
+              <tr>
+                <td>Offer</td>
+                <td>Samsung Member</td>
+                <td>Explore</td>
+                <td>Order Status</td>
+                <td>App Store</td>
+                <td>Samsung</td>
+                <td>Airtag</td>
+                <td>Accessories</td>
+
+              </tr>
+            </table>
+          </center>
+        </div>
+
+        <div id="two" class="col-4 col-lg-2">
+          <center>
+            <table class="tabletwo">
+              <tr>
+                <th>About</th>
+              </tr>
+              <tr>
+                <td>Newsroom</td>
+                <td>Contact Apple</td>
+                <td>Explore</td>
+                <td>Order Status</td>
+                <td>Company Info</td>
+                <td>Business Area</td>
+                <td>Airtag</td>
+                <td>Accessories</td>
+
+              </tr>
+            </table>
+          </center>
+        </div>
+
+        <div id="three" class="col-4 col-lg-2">
+
+          <center>
+            <table class="tabletwo">
+              <tr>
+                <th>Shop</th>
+              </tr>
+              <tr>
+                <td>Offer</td>
+                <td>Samsung Member</td>
+                <td>Explore</td>
+                <td>Order Status</td>
+                <td></td>
+                <td>Samsung</td>
+                <td>Airtag</td>
+                <td>Accessories</td>
+
+              </tr>
+            </table>
+          </center>
+        </div>
+
+
+        <div id="four" class="col-lg-6 col-md-12">
+          <div class="social-link">
+            <center>
+              <a href="" class="logohoverr"><button class="btn" id="mybtn"><i class="fa fa-facebook"
+                    id="faa"></i></button></a>
+              <a href="" class="logohoverr"><button class="btn" id="mybtn"><i class="fa fa-youtube"
+                    id="faa"></i></button></a>
+              <a href="" class="logohoverr"><button class="btn" id="mybtn"><i class="fa fa-twitter"
+                    id="faa"></i></button></a>
+              <a href="" class="logohoverr"><button class="btn" id="mybtn"><i class="fa fa-linkedin"
+                    id="faa"></i></button></a>
+              <a href="" class="logohoverr"><button class="btn" id="mybtn"><i class="fa fa-instagram"
+                    id="faa"></i></button></a>
+            </center>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
+<script>
+  AOS.init();
+</script>
+<script>
+  $(document).ready(function(){
+    $('.card1').hover(
+      function(){
+        $('#buy').fadeIn(100);
+      },
+      function(){
+        $('#buy').fadeOut(100);
+      },
+      
+    )
+  })
+  $(document).ready(function(){
+    $('.card1').hover(
+        function(){
+        $('#p').hide(100);
+      },
+      function(){
+        $('#p').show(100);
+      },
+      
+    )
+  })
+  $(document).ready(function(){
+    $('.card2').hover(
+      function(){
+        $('#buy2').fadeIn(100);
+      },
+      function(){
+        $('#buy2').fadeOut(100);
+      },
+    )
+  })
+  $(document).ready(function(){
+    $('.card2').hover(
+        function(){
+        $('#p2').hide(100);
+      },
+      function(){
+        $('#p2').show(100);
+      },
+      
+    )
+  })
+  $(document).ready(function(){
+    $('.card3').hover(
+      function(){
+        $('#buy3').fadeIn(100);
+      },
+      function(){
+        $('#buy3').fadeOut(100);
+      },
+    )
+  })  
+  $(document).ready(function(){
+    $('.card3').hover(
+        function(){
+        $('#p3').hide(100);
+      },
+      function(){
+        $('#p3').show(100);
+      },
+      
+    )
+  })
+  $(document).ready(function(){
+    $('.card4').hover(
+      function(){
+        $('#buy4').fadeIn(100);
+      },
+      function(){
+        $('#buy4').fadeOut(100);
+      },
+      
+    )
+  })
+  $(document).ready(function(){
+    $('.card4').hover(
+        function(){
+        $('#p4').hide(100);
+      },
+      function(){
+        $('#p4').show(100);
+      },
+      
+    )
+  })
+  $(document).ready(function(){
+    $('.card5').hover(
+      function(){
+        $('#buy5').fadeIn(100);
+      },
+      function(){
+        $('#buy5').fadeOut(100);
+      },
+      
+    )
+  })
+  $(document).ready(function(){
+    $('.card5').hover(
+        function(){
+        $('#p5').hide(100);
+      },
+      function(){
+        $('#p5').show(100);
+      },
+      
+    )
+  })
+  $(document).ready(function(){
+    $('.card6').hover(
+      function(){
+        $('#buy6').fadeIn(100);
+      },
+      function(){
+        $('#buy6').fadeOut(100);
+      },
+      
+    )
+  })
+  $(document).ready(function(){
+    $('.card6').hover(
+        function(){
+        $('#p6').hide(100);
+      },
+      function(){
+        $('#p6').show(100);
+      },
+      
+    )
+  })
+</script>

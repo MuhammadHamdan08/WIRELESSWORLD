@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+				crossorigin="anonymous"></script>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+				<script src="jquery-3.6.1.min.js"></script>
+				<script src="app.js"></script>
+    <style>
+      /* navbar */
+      #samsunglogo{
+    margin-left: 30%;
+}
+.navbar-nav{
+    margin-top: 0.2%;
+    margin-left: 2.5%;
+    font-size: 0.8vw;
+    font-weight: 750;
+}
+#header{
+	background-image:linear-gradient(to right,rgb(228, 225, 225),rgb(59, 58, 58));
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-nav{
+        font-size: 10px;
+      } 
+    .carousel{
+     height: 180px;
+    }
+    .d-block{
+        height: 180px;
+    }
+    }
+    
+.nav-item:hover{
+    background-color: black; 
+    border-radius: 30px;
+}
+
+.nav-item{
+    border-radius: 30px !important;
+ 
+}
+#home:hover{
+    color:white;
+}
+
+
+  /* aboutus */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.section{
+	width: 100%;
+	min-height: 100vh;
+	background-color:whitesmoke;
+}
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+.content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+    border-radius: 5%;
+}
+.content-section .content .button a:hover{
+	background-color:black;
+	color:#fff;
+}
+.content-section .social{
+	margin: 40px 40px;
+}
+.content-section .social i{
+	color:#a52a2a;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.content-section .social i:hover{
+	color:#3d3d3d;
+}
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;
+	
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+.content-section .content #btn{
+	text-align: center;
+}
+.content-section .content #btn a{
+	padding:9px 30px;
+}
+.content-section .social{
+	text-align: center;
+}
+
+}
+#facebook{
+    color:rgb(35, 35, 128);
+}
+#facebook:hover{
+    color: #5d5d5d;
+}
+#twitter{
+    color: rgb(41, 130, 239);
+}
+#twitter:hover{
+    color: #5d5d5d;
+}
+#hamdan{
+	margin-left: 5%;
+}
+button{
+	background-color: #3e3e3e !important;
+	color: white !important;
+	border: none;
+	font-size: 20px;
+}
+button:hover{
+	background-color: black !important;
+	color: white !important;
+}
+#more{
+	display: none;
+}
+
+
+    </style>
+</head>	
+<body>
+ 
+    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img id="samsunglogo" src="image/wireless1.png" alt="" width="130" height="50">
+          </a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="home" class="nav-link active" aria-current="page" href="./home.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a id="home" class="nav-link active" aria-current="page" href="./aboutus.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a id="home" class="nav-link active" aria-current="page" href="conatctuspage.html">CONTACT</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="home" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  MENU
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="./applepage.html">APPLE</a></li>
+                  <li><a class="dropdown-item" href="./samsungpage.html">SAMSUNG</a></li>
+                  <li><a class="dropdown-item" href="./oppopage.html">OPPO</a></li>
+                  <li><a class="dropdown-item" href="./infinixpage.html">INFINIX</a></li>
+                  <li><a class="dropdown-item" href="./xiaomipage.html">XIAOMI</a></li>
+    
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      </nav>
+
+
+
+
+
+
+
+
+	<div class="section">
+		<div class="container">
+			<div class="content-section">
+				<div class="title">
+					<h1><img src="image/wireless1.png" alt=""></h1>
+				</div>
+
+	<div id="hamdan">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+<button type="button" class="btn  btn-lg" 	onclick="myFunction()" id="myBtn1">Read More</button>
+</div>
+				<div class="social">
+					<a href=""><i id="facebook" class="fab fa-facebook-f"></i></a>
+					<a href=""><i id="twitter" class="fab fa-twitter"></i></a>
+					<a href=""><i id="instagram" class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="image-section">
+				<img src="oppoimage/oppoF21Pro.webp">
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
